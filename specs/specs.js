@@ -66,14 +66,20 @@ describe ('RecordShop', function(){
     console.log(recordShop.listInventory())
   });
 
-  it('can find record by artist', function(){
-    assert.deepEqual(record1, recordShop.findByArtist("Spice Girls"))
-  });
+  // it('can find record by artist', function(){
+  //   assert.deepEqual(record1, recordShop.findByArtist("Spice Girls"))
+  // });
 
 
-  it('can find record by title', function(){
-    assert.deepEqual(record2, recordShop.findByTitle("2 become 1"))
-  });
+  // it('can find record by title', function(){
+  //   assert.deepEqual(record2, recordShop.findByTitle("2 become 1"))
+  // });
+
+  it('sell record',function(){
+    recordShop.add(record1)
+    recordShop.sellRecord(record1)
+    assert.equal(recordShop.balance, 1003.99)
+  })
 
 
 
