@@ -79,7 +79,9 @@ describe ('RecordShop', function(){
     recordShop.add(record1)
     recordShop.sellRecord(record1)
     assert.equal(recordShop.balance, 1003.99)
-  })
+  });
+
+  
 
 
 
