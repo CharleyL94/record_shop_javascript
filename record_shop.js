@@ -17,15 +17,17 @@ RecordShop.prototype = {
     this.records.push(record);
 
   },
-// findByAritist: function(artist){
+
+// functions not working
+// findByArtist: function(artist){
 //   var record = _.find(this.records, { "artist": artist});
 //     return record
-//   };
+//   },
 
 // findByTitle: function(title){
 //   var record = _.find(this.records, {"title": title});
 //   return record
-// };
+// },
 
 
 listInventory: function(){

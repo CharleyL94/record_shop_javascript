@@ -64,7 +64,16 @@ describe ('RecordShop', function(){
     recordShop.add(record2)
     recordShop.add(record3)
     console.log(recordShop.listInventory())
-  })
+  });
+
+  it('can find record by artist', function(){
+    assert.deepEqual(record1, recordShop.findByArtist("Spice Girls"))
+  });
+
+
+  it('can find record by title', function(){
+    assert.deepEqual(record2, recordShop.findByTitle("2 become 1"))
+  });
 
 
 
