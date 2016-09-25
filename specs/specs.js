@@ -81,11 +81,14 @@ describe ('RecordShop', function(){
     assert.equal(recordShop.balance, 1003.99)
   });
 
+})
+
+describe( Customer,function(){
+  var record1;
+
+  beforeEach(function(){
+
+    record1 = new Record("Beyonce", "Halo", 6);
+  })
   
-
-
-
-
-
-
 })
